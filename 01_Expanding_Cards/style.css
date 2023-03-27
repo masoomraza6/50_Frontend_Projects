@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px 30px;
+}
+.cardBox{
+    width: 8%;
+    height: 80%;
+    margin: 0px 10px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    flex: 0.5;
+    -webkit-transition: all 700ms ease-in;
+}
+h3{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    padding-left: 30px;
+    opacity: 0;
+}
+.active{
+    flex: 5;
+}
+.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.cardBox:nth-child(1):before{
+    content: '';
+    background: url('/img/img1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+.cardBox:nth-child(2):before{
+    content: '';
+    background: url('/img/img2.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+.cardBox:nth-child(3):before{
+    content: '';
+    background: url('/img/img3.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+.cardBox:nth-child(4):before{
+    content: '';
+    background: url('/img/img4.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+.cardBox:nth-child(5):before{
+    content: '';
+    background: url('/img/img5.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    z-index: -1;
+}
+    

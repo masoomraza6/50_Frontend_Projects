@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: black;
+}
+.ripple{
+    padding: 20px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: #800080;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+}
+.btn:focus{
+    outline: none;
+}
+button .circle{
+    position: absolute;
+}
+@keyframes scale {
+    to{
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
